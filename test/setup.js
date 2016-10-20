@@ -45,4 +45,3 @@ global.navigator = {
   userAgent: 'node.js'
 };
 
-documentRef = document;

@@ -4,7 +4,7 @@
   "description": "React + Webpack + ESLint + Redux + React-Router v4 + Mocha + JSDOM Boilerplate project",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "NODE_PATH=./src mocha test/setup.js src/**/*.test.js",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "lint": "eslint . --ext .js --ext .jsx --cache"
   },
