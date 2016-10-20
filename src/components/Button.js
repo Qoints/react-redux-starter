@@ -6,4 +6,9 @@ const Button = ({children, onClick}) => (
   </button>
 );
 
+Button.propTypes = {
+  children: React.PropTypes.node.isRequired,
+  onClick: React.PropTypes.func
+};
+
 export default Button;

@@ -1,20 +1,22 @@
 import React from "react";
-import {incrementCounter, counter} from "flux/counter";
-import {connect} from "react-redux";
-import Button from 'components/Button';
+import Router from "react-router/BrowserRouter";
+import Match from "react-router/Match";
+import Link from "react-router/Link";
+import Counter from "./Counter";
+import Hello from "./Hello";
 
-@connect(
-  state => ({counter: counter(state)}),
-  {incrementCounter}
-)
-export default class Counter extends React.Component {
-  render() {
-    const {incrementCounter, counter} = this.props;
-    return (
-      <div>
-        <h3>{counter}</h3>
-        <Button onClick={() => incrementCounter()}>Increment</Button>
-      </div>
-    );
-  }
-}
+const BasicExample = () => (
+  <Router>
+    <div>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/counter">Counter</Link></li>
+      </ul>
+
+      <Match exactly pattern="/" component={Hello}/>
+      <Match pattern="/counter" component={Counter}/>
+    </div>
+  </Router>
+);
+
+export default BasicExample;
