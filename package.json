@@ -1,0 +1,32 @@
+{
+  "name": "react-redux-starter",
+  "version": "0.0.1",
+  "description": "React + Webpack + ESLint + Redux + React-Router v4 + Mocha + JSDOM Boilerplate project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qoints/react-redux-starter.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "eslint",
+    "redux",
+    "react-router",
+    "mocha",
+    "jsdom",
+    "chai",
+    "boilerplate",
+    "starter"
+  ],
+  "author": "Alex Panov",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/Qoints/react-redux-starter/issues"
+  },
+  "homepage": "https://github.com/Qoints/react-redux-starter#readme"
+}
