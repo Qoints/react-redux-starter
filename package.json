@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_PATH=./src mocha test/setup.js src/**/*.test.js",
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start": "webpack-dashboard -- node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "lint": "eslint . --ext .js --ext .jsx --cache"
   },
   "repository": {
@@ -55,6 +55,7 @@
     "mocha": "~3.1.2",
     "react-addons-test-utils": "~15.3.2",
     "webpack": "~1.13.2",
+    "webpack-dashboard": "^0.2.1",
     "webpack-dev-server": "~1.16.2"
   }
 }

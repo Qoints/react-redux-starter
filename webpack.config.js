@@ -1,11 +1,11 @@
+const DashboardPlugin = require('webpack-dashboard/plugin');
+
 module.exports = {
-  entries: {
-    index: './src/index.js'
-  },
+  entry: './src/index.js',
   output: {
     path: __dirname,
     publicPath: '/',
-    filename: '[name].bundle.js'
+    filename: 'bundle.js'
   },
   module: {
     loaders: [{
@@ -17,6 +17,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx'],
     root: __dirname + '/src/'
   },
+  plugins: [new DashboardPlugin()],
   devServer: {
     historyApiFallback: true,
     contentBase: './'
